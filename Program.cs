@@ -38,7 +38,6 @@
                 Console.WriteLine(simvol);
                 Console.WriteLine("Ти загуби");
                 AI++;
-                Console.WriteLine($"Ти: {PC}, AI: {AI}");
             }
 
             else if (type == "камък" && simvol == "ножица" || type == "ножица" && simvol == "хартия" || type == "хартия" && simvol == "камък")
@@ -46,15 +45,19 @@
                 Console.WriteLine(simvol);
                 Console.WriteLine("Ти спечели");
                 PC++;
-                Console.WriteLine($"Ти: {PC}, AI: {AI}");
             }
 
             else if (type == "камък" && simvol == "камък" || type == "ножица" && simvol == "ножица" || type == "хартия" && simvol == "хартия")
             {
                 Console.WriteLine(simvol);
                 Console.WriteLine("Равенство");
-                Console.WriteLine($"Ти: {PC}, AI: {AI}");
             }
+            else
+            {
+                Console.WriteLine("Опа лянка не съм оправил кода");
+                Console.WriteLine("Ако нещо такова стане оправи кода в GITHUB");
+            }
+            Console.WriteLine($"Ти: {PC}, AI: {AI}");
         }
     }
 }
